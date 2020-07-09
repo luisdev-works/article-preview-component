@@ -1,0 +1,59 @@
+@import 'config';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 13px;
+  font-family: 'Manrope', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: $color-four;
+}
+
+.main-content {
+  border-radius: 20px;
+  border: 2px solid red;
+  width: 375px;
+  background-color: white;
+  z-index: 6;
+  color: $color-one;
+  &__img {
+    background-image: url(/img/drawers.jpg);
+    width: auto;
+    height: 245px;
+    border-radius: 20px 20px 0 0;
+    background-size: cover;
+    z-index: 0;
+  }
+  &__title {
+    padding: 30px 30px 20px;
+    font-size: 18px;
+    font-weight: bolder;
+  }
+  &__paragraph {
+    padding: 0 30px;
+    line-height: 20px;
+  }
+  &__contact {
+    padding: 10px 30px;
+    display: flex;
+    img {
+      border: 1px solid red;
+      border-radius: 50%;
+      width: 40px;
+    }
+    svg {
+      border: 1px solid red;
+      border-radius: 50%;
+    }
+  }
+}
