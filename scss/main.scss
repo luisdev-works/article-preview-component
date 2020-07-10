@@ -19,7 +19,7 @@ body {
   background-color: $color-four;
 }
 
-.main-content {
+.article-content {
   border-radius: 20px;
   border: 2px solid red;
   width: 375px;
@@ -45,7 +45,6 @@ body {
   }
   &__contact {
     padding: 10px 30px;
-    display: flex;
     img {
       border: 1px solid red;
       border-radius: 50%;
