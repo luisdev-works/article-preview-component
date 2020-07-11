@@ -43,18 +43,26 @@ body {
     padding: 0 30px;
     line-height: 20px;
   }
-  &__contact {
+  &__author {
     padding: 10px 30px;
-    img {
+    // display: flex;
+    // justify-content: space-between;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 1fr;
+    position: relative;
+    &--avatar img {
       border: 1px solid red;
       border-radius: 50%;
       width: 40px;
     }
-    svg {
+    &--button svg {
       border: 1px solid red;
       border-radius: 50%;
+      position: absolute;
     }
   }
 }
 
-//TODO: Git test
+//* You can also add a margin to the author and date to customize the space between the container
+//TODO: Customize the svg button, make it bigger, and and a background
