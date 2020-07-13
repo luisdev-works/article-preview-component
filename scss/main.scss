@@ -59,10 +59,16 @@ body {
     &--button svg {
       border: 1px solid red;
       border-radius: 50%;
-      position: absolute;
+      position: relative;
+      padding: 10px;
+      padding-top: 7.5px;
+      padding-bottom: 7.5px;
+      justify-self: center;
+      background-color: hsl(210, 46%, 95%);
     }
   }
 }
 
 //* You can also add a margin to the author and date to customize the space between the container
-//TODO: Customize the svg button, make it bigger, and and a background
+//TODO: Customize the svg button, make it bigger, and and a background, learn to code svg
+//TODO: Relearn BEM Method
