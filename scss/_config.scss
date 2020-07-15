@@ -2,3 +2,11 @@ $color-one: hsl(217, 19%, 35%);
 $color-two: hsl(214, 17%, 51%);
 $color-three: hsl(212, 23%, 69%);
 $color-four: hsl(210, 46%, 95%);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
