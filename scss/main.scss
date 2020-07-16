@@ -4,7 +4,7 @@ body {
   height: 100vh;
   width: 100%;
   font-size: 16px;
-  border-color: $color-four;
+  background-color: $color-four;
   font-family: 'Manrope', sans-serif;
 }
 
@@ -100,7 +100,17 @@ body {
 .article-icons {
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: 40%;
+  margin-right: 5%;
+}
+
+.article-share {
+  background-color: $color-four;
+  border-radius: 50%;
+  padding: 10px;
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
+  cursor: pointer;
 }
 
 @media (min-width: 640px) {
@@ -123,6 +133,7 @@ body {
   }
 
   .triangle {
+    display: block;
     height: 0;
     width: 0;
     border-left: 20px solid transparent;
@@ -131,5 +142,23 @@ body {
     position: absolute;
     left: 110px;
     top: 40px;
+  }
+
+  .article-social {
+    z-index: 1;
+    align-items: center;
+  }
+
+  .article-icons {
+    width: 50%;
+  }
+
+  .article-share {
+    display: block;
+    position: relative;
+    z-index: 3;
+    &__mobile {
+      display: none;
+    }
   }
 }
