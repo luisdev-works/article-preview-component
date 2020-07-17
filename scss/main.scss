@@ -34,14 +34,14 @@ body {
   border-radius: 0 0 10px 10px;
   p {
     font-size: 13px;
-  }
-  &:nth-child(1) {
-    font-size: 16px;
-    font-weight: 700;
-  }
-  &:nth-child(2) {
-    font-size: 14px;
-    font-weight: 500;
+    &:nth-child(1) {
+      font-size: 20px;
+      font-weight: 700;
+    }
+    &:nth-child(2) {
+      font-size: 14px;
+      font-weight: 500;
+    }
   }
 }
 
@@ -58,39 +58,21 @@ body {
   p:nth-child(1) {
     font-size: 13px;
   }
+  p:nth-child(2) {
+    margin-top: 5px;
+    margin-top: 10px;
+  }
 }
 
 .article-details {
   display: flex;
+  &--inner {
+    margin-left: 15px;
+  }
 }
 
 .triangle {
   display: none;
-}
-
-.article-social {
-  border-color: $color-one;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
-  z-index: 1;
-  padding: 15px 40px 25px;
-  top: -10px;
-  left: -275px;
-  border-radius: 0 0 10px 10px;
-  width: 350px;
-  cursor: pointer;
-  opacity: 0;
-  p {
-    transform: uppercase;
-    color: #ffffff;
-    letter-spacing: 4px;
-    font-weight: 200;
-  }
-  &:nth-child(1) {
-    font-size: 13px;
-  }
 }
 
 .toggle {
@@ -111,6 +93,43 @@ body {
   padding-top: 7.5px;
   padding-bottom: 7.5px;
   cursor: pointer;
+  position: relative;
+  z-index: 3;
+  &__mobile {
+    display: block;
+    border-radius: 50%;
+    background-color: hsl(210, 46%, 95%);
+    padding: 10px;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+  }
+}
+
+.article-social {
+  background-color: $color-one;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 1;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+  top: -10px;
+  left: -275px;
+  border-radius: 0 0 10px 10px;
+  width: 350px;
+  cursor: pointer;
+  opacity: 0;
+  p {
+    transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 4px;
+    font-weight: 200;
+    &:nth-child(1) {
+      font-size: 13px;
+    }
+  }
 }
 
 @media (min-width: 640px) {
@@ -147,6 +166,10 @@ body {
   .article-social {
     z-index: 1;
     align-items: center;
+    width: 250px;
+    padding-bottom: 15px;
+    top: -70px;
+    left: -110px;
   }
 
   .article-icons {
@@ -154,9 +177,6 @@ body {
   }
 
   .article-share {
-    display: block;
-    position: relative;
-    z-index: 3;
     &__mobile {
       display: none;
     }
