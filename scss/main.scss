@@ -35,12 +35,13 @@ body {
   p {
     font-size: 13px;
     &:nth-child(1) {
-      font-size: 20px;
+      font-size: 16px;
       font-weight: 700;
     }
     &:nth-child(2) {
       font-size: 14px;
       font-weight: 500;
+      margin-top: 10px;
     }
   }
 }
@@ -60,23 +61,19 @@ body {
   }
   p:nth-child(2) {
     margin-top: 5px;
-    margin-top: 10px;
   }
 }
 
 .article-details {
   display: flex;
-  &--inner {
-    margin-left: 15px;
-  }
+}
+
+.article-inner {
+  margin-left: 15px;
 }
 
 .triangle {
   display: none;
-}
-
-.toggle {
-  opacity: 1;
 }
 
 .article-icons {
@@ -109,6 +106,7 @@ body {
   background-color: $color-one;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: absolute;
   z-index: 1;
   padding-top: 15px;
@@ -121,6 +119,8 @@ body {
   width: 350px;
   cursor: pointer;
   opacity: 0;
+
+  align-items: center;
   p {
     transform: uppercase;
     color: #ffffff;
@@ -130,6 +130,10 @@ body {
       font-size: 13px;
     }
   }
+}
+
+.toggle {
+  opacity: 1;
 }
 
 @media (min-width: 640px) {
@@ -149,6 +153,9 @@ body {
     width: 450px;
     height: 300px;
     border-radius: 0 10px 10px 0;
+    p:nth-child(1) {
+      font-size: 20px;
+    }
   }
 
   .triangle {
@@ -164,12 +171,20 @@ body {
   }
 
   .article-social {
-    z-index: 1;
-    align-items: center;
-    width: 250px;
+    padding-top: 15px;
     padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
     top: -70px;
     left: -110px;
+    border-radius: 10px;
+    width: 250px;
+    align-items: center;
+    opacity: 0;
+
+    p:nth-child(1) {
+      font-size: 16px;
+    }
   }
 
   .article-icons {
@@ -181,4 +196,19 @@ body {
       display: none;
     }
   }
+
+  .article-author {
+    p:nth-child(1) {
+      font-size: 16px;
+    }
+    p:nth-child(2) {
+      margin-top: 5px;
+    }
+  }
+
+  .toggle {
+    opacity: 1;
+  }
 }
+
+//TODO: Work on the toggle and buttons!
