@@ -3,7 +3,6 @@
 body {
   height: 100vh;
   width: 100%;
-  font-size: 16px;
   background-color: $color-four;
   font-family: 'Manrope', sans-serif;
 }
@@ -33,15 +32,16 @@ body {
   height: 290px;
   border-radius: 0 0 10px 10px;
   p {
-    font-size: 13px;
     &:nth-child(1) {
       font-size: 16px;
       font-weight: 700;
+      color: $color-one;
     }
     &:nth-child(2) {
       font-size: 14px;
       font-weight: 500;
       margin-top: 10px;
+      color: $color-two;
     }
   }
 }
@@ -109,7 +109,7 @@ body {
   align-items: center;
   position: absolute;
   z-index: 1;
-  padding-top: 15px;
+  padding-top: 20px;
   padding-bottom: 25px;
   padding-left: 40px;
   padding-right: 40px;
@@ -119,13 +119,12 @@ body {
   width: 350px;
   cursor: pointer;
   opacity: 0;
-
   align-items: center;
   p {
-    transform: uppercase;
-    color: #ffffff;
+    text-transform: uppercase;
+    color: $color-three !important;
     letter-spacing: 4px;
-    font-weight: 200;
+    font-weight: 100 !important;
     &:nth-child(1) {
       font-size: 13px;
     }
@@ -134,6 +133,12 @@ body {
 
 .toggle {
   opacity: 1;
+  .article-share__mobile {
+    background-color: $color-two;
+  }
+  .svg-arrow {
+    fill: $color-four;
+  }
 }
 
 @media (min-width: 640px) {
@@ -166,7 +171,7 @@ body {
     border-right: 20px solid transparent;
     border-top: 20px solid $color-one;
     position: absolute;
-    left: 110px;
+    left: 107px;
     top: 40px;
   }
 
@@ -183,7 +188,7 @@ body {
     opacity: 0;
 
     p:nth-child(1) {
-      font-size: 16px;
+      font-size: 12px !important;
     }
   }
 
